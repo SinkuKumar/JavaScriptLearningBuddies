@@ -36,6 +36,27 @@ The reason the instruction to place the `<script>` element near the bottom of th
   ![Alt text](image-1.png)
 
 
+## Functions
+
+- Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code.
+
+- `document.querySelector("html").addEventListener("click", function () {
+  alert("Ouch! Stop poking me!");
+});`
+
+- `document.querySelector("html").addEventListener("click", () => {
+  alert("Ouch! Stop poking me!");
+});`
+
+- The function we just passed to `addEventListener()` here is called an `anonymous function `, because it doesn't have a name. There's an alternative way of writing anonymous functions, which we call an `arrow function `. An arrow function uses `() => instead of function ()`
+
+- `function setUserName() {
+  const myName = prompt("Please enter your name.");
+  localStorage.setItem("name", myName);
+  myHeading.textContent = 'Mozilla is cool, ${myName}';
+}`
+
+- The `setUserName()` function contains a `prompt()` function, which displays a dialog box, similar to `alert()`. This `prompt()` function does more than `alert()`, asking the user to enter data, and storing it in a variable after the user clicks OK. In this case, we are asking the user to enter a name. Next, the code calls on an API `localStorage`, which allows us to store data in the browser and retrieve it later. We use localStorage's `setItem()` function to create and store a data item called `'name'`, setting its value to the myName variable which contains the user's entry for the name. Finally, we set the `textContent` of the heading to a string, plus the user's newly stored name.
 
 
 
