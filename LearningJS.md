@@ -48,7 +48,8 @@ The reason the instruction to place the `<script>` element near the bottom of th
   });
   ```
 
-- ```JavaScriptdocument.querySelector("html").addEventListener("click", () => {
+- ```JavaScript
+  document.querySelector("html").addEventListener("click", () => {
   alert("Ouch! Stop poking me!");
   });
   ```
