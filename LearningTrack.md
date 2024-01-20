@@ -17,3 +17,5 @@
 ### Topics
 1. [Hello World](./JavaScript_Basics_MDN/hello_world.js)
 - This topic demonstrates the DOM manipulation, how the element can be selected and can be manipulated using JavaScript.
+- The given example uses .querySelector() to select and html tag using tag name.
+- Once the tag is selected it's being updated using the .textContent
